@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include "rando.h"
+#include <string.h>
 
 int generateRandom() {
   int f = open("/dev/random", O_RDONLY);
