@@ -27,7 +27,7 @@ int main() {
   }
   close(f);
 
-  printf("Copied list in file"\n);
+  printf("Copied list in file\n");
   f = open("random.txt", O_RDONLY);
   int final[10];
   read(f, final, 10);
