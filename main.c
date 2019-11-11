@@ -7,8 +7,9 @@
 #include "rando.h"
 
 int main() {
-  int * list = malloc(10 * sizeof(int));
-  *list = generateRandom();
+  int list[] = malloc(10 * sizeof(int));
+  int num = generateRandom();
+  printf("num: %d\n", num);
   int i;
   for (i = 0; i < 10; i++) {
     printf("printing num %d: %d\n", i, *(list+i));
