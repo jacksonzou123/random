@@ -13,7 +13,7 @@ int generateRandom() {
     printf("Error: %s", strerror(errno));
   }
   else {
-    int *final = malloc(1*sizeof(int));
+    int final[1];
     read(f, final, 1);
     return final[0];
   }
