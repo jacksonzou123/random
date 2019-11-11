@@ -5,4 +5,4 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-int * generateRandom(int *list, int size);
+int generateRandom();

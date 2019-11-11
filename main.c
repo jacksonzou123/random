@@ -8,7 +8,7 @@
 
 int main() {
   int * list = malloc(10 * sizeof(int));
-  list = generateRandom(list, 10);
+  *list = generateRandom();
   int i;
   for (i = 0; i < 10; i++) {
     printf("printing num %d: %d\n", i, *(list+i));

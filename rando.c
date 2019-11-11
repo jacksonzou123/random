@@ -4,15 +4,16 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include "rando.h"
 
-int * generateRandom(int *list, int size) {
+int generateRandom() {
   int f = open("/dev/random", O_RDONLY);
   // if (f == -1) {
-  printf("Error: %s\n", strerror(errno));
+  printf("File: %d", f);
   // }
   // else {
   //   read(f, list, 10);
   //   return list;
   // }
-  return list;
+  return 0;
 }
