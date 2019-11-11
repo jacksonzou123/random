@@ -13,9 +13,9 @@ int generateRandom() {
     printf("Error: %s", strerror(errno));
   }
   else {
-    int final;
+    int *final = malloc(1*sizeof(int));
     read(f, final, 1);
-    return final;
+    return final[0];
   }
   return 0;
 }
