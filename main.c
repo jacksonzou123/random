@@ -26,7 +26,7 @@ int main() {
   }
   close(f);
 
-  int f = open("random.txt", O_RDONLY);
+  f = open("random.txt", O_RDONLY);
   int final[10];
   read(f, final, 10);
   for (i = 0; i < 10; i++) {
