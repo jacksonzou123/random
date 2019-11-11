@@ -8,12 +8,13 @@
 
 int generateRandom() {
   int f = open("/dev/random", O_RDONLY);
-  // if (f == -1) {
-  printf("File: %d", f);
-  // }
-  // else {
-  //   read(f, list, 10);
-  //   return list;
-  // }
+  if (f == -1) {
+    printf("Error: %s", strerror(errno));
+  }
+  else {
+    int final;
+    read(f, final, 1);
+    return final;
+  }
   return 0;
 }
