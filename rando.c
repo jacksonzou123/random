@@ -15,7 +15,7 @@ int generateRandom() {
   else {
     int *final;
     read(f, final, 1);
-    return final;
+    return final[0];
   }
   return 0;
 }
