@@ -13,7 +13,7 @@ int main() {
   for (i = 0; i < 10; i++) {
     *(list+i) = generateRandom();
   }
-  printf("Original list");
+  printf("Original list\n");
   for (i = 0; i < 10; i++) {
     printf("printing num %d: %d\n", i, *(list+i));
   }
@@ -27,7 +27,7 @@ int main() {
   }
   close(f);
 
-  printf("Copied list in file");
+  printf("Copied list in file"\n);
   f = open("random.txt", O_RDONLY);
   int final[10];
   read(f, final, 10);
