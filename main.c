@@ -13,7 +13,7 @@ int main() {
     *(list+i) = generateRandom();
   }
   for (i = 0; i < 10; i++) {
-    printf("printing num %d: %d", i, *(list+i));
+    printf("printing num %d: %d\n", i, *(list+i));
   }
   return 0;
 }
