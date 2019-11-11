@@ -30,7 +30,7 @@ int main() {
   int final[10];
   read(f, final, 10);
   for (i = 0; i < 10; i++) {
-    printf("printing num %d: %d", i, *(final+i));
+    printf("printing num %d: %d\n", i, *(final+i));
   }
   return 0;
 }
