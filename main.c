@@ -29,8 +29,8 @@ int main() {
 
   printf("Copied list in file\n");
   f = open("random.txt", O_RDONLY);
-  int final[10];
-  read(f, final, 10);
+  int *final = malloc(sizeof(int) * 10);
+  read(f, final, sizeof(int)*10);
   for (i = 0; i < 10; i++) {
     printf("printing num %d: %d\n", i, *(final+i));
   }
